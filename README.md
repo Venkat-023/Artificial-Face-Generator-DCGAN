@@ -1,1 +1,1 @@
-# Artificial-Face-Generator--DCGAN
+# Artificial-Face-Generator-DCGAN
