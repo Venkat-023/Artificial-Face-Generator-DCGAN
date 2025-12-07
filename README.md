@@ -47,7 +47,85 @@ Takes a **latent vector (100 dims)** and produces a **128×128 RGB face image** 
 ### **4. GAN Model**
 Implemented via subclassing:
 
-```python
-class GAN(keras.Model):
-    def train_step(self, data):
-        ...
+Includes:
+
+Separate optimizers for generator & discriminator
+
+Binary cross-entropy losses
+
+Custom metrics for monitoring both losses
+
+5. Callbacks
+
+Includes a custom GANMonitor that:
+
+Generates a grid of sample images each epoch
+
+Saves images to disk
+
+Displays samples inline during training
+
+Also includes:
+
+Google Drive checkpoint saving
+
+Periodic generator model saving
+
+📁 File Structure
+Celeb_Faces.ipynb     # Main notebook file
+kaggle.json           # Kaggle API key (DO NOT upload to GitHub!)
+/content/celeba       # Extracted dataset (ignored in repo)
+generated/            # Saved output images (optional)
+models/               # Saved generator weights (optional)
+
+🔧 Requirements
+
+Python 3.8+
+
+TensorFlow 2.x
+
+Keras
+
+NumPy
+
+Matplotlib
+
+Kaggle API (for dataset download)
+
+Install dependencies:
+
+pip install tensorflow keras numpy matplotlib kaggle
+
+▶️ Running the Notebook
+
+Upload kaggle.json to the notebook directory
+
+Ensure permission setup:
+
+!mkdir -p ~/.kaggle
+!cp kaggle.json ~/.kaggle/
+!chmod 600 ~/.kaggle/kaggle.json
+
+
+Run all cells to:
+
+Download and extract CelebA
+
+Build models
+
+Train GAN
+
+Generate synthetic face images
+
+Training generates sample outputs each epoch and stores checkpoints.
+📦 Model Saving
+
+The notebook saves:
+
+Generator model files (.h5)
+
+Checkpoints for GAN, discriminator, and generator
+
+Generated sample images every epoch
+
+These are saved either locally or in mounted Google Drive.
