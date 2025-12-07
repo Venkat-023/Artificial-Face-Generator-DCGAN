@@ -1,4 +1,3 @@
-# Artificial-Face-Generator-DCGAN
 # 🎨 CelebFaces GAN — Generating Realistic Celebrity Faces with TensorFlow
 
 This repository contains an end-to-end implementation of a **Generative Adversarial Network (GAN)** trained on the **CelebA human face dataset**.  
