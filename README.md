@@ -4,7 +4,7 @@ This repository contains an end-to-end implementation of a **Generative Adversar
 The project demonstrates how to build, train, and monitor a GAN capable of generating realistic synthetic face images.
 
 
-##  Features
+#  Features
 
 -  Automated download of the **CelebA Dataset**  
 -  Image preprocessing pipeline using `tf.data`  
