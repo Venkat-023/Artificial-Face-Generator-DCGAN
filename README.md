@@ -1,26 +1,24 @@
-# 🎨 CelebFaces GAN — Generating Realistic Celebrity Faces with TensorFlow
+#  CelebFaces GAN — Generating Realistic Celebrity Faces with TensorFlow
 
 This repository contains an end-to-end implementation of a **Generative Adversarial Network (GAN)** trained on the **CelebA human face dataset**.  
 The project demonstrates how to build, train, and monitor a GAN capable of generating realistic synthetic face images.
 
----
 
-## 🚀 Features
+##  Features
 
-- ✅ Automated download of the **CelebA Dataset**  
-- ✅ Image preprocessing pipeline using `tf.data`  
-- ✅ Custom **Discriminator** and **Generator** networks implemented in Keras  
-- ✅ Full **GAN training loop** using class-based model subclassing  
-- ✅ Custom callbacks for:
+-  Automated download of the **CelebA Dataset**  
+-  Image preprocessing pipeline using `tf.data`  
+-  Custom **Discriminator** and **Generator** networks implemented in Keras  
+-  Full **GAN training loop** using class-based model subclassing  
+-  Custom callbacks for:
   - Saving sample generated images after each epoch  
   - Saving model checkpoints to Google Drive  
   - Saving generator model snapshots  
-- ✅ Visualization utilities for inspecting generated faces  
-- ✅ Fully reproducible notebook workflow (Colab-friendly)
+-  Visualization utilities for inspecting generated faces  
+-  Fully reproducible notebook workflow (Colab-friendly)
 
----
 
-## 🧠 Project Architecture
+##  Project Architecture
 
 ### **1. Dataset Loading**
 CelebA is downloaded automatically using the Kaggle API:
@@ -70,14 +68,14 @@ Google Drive checkpoint saving
 
 Periodic generator model saving
 
-📁 File Structure
+ File Structure
 Celeb_Faces.ipynb     # Main notebook file
 kaggle.json           # Kaggle API key (DO NOT upload to GitHub!)
 /content/celeba       # Extracted dataset (ignored in repo)
 generated/            # Saved output images (optional)
 models/               # Saved generator weights (optional)
 
-🔧 Requirements
+ Requirements
 
 Python 3.8+
 
@@ -95,7 +93,7 @@ Install dependencies:
 
 pip install tensorflow keras numpy matplotlib kaggle
 
-▶️ Running the Notebook
+ Running the Notebook
 
 Upload kaggle.json to the notebook directory
 
@@ -117,7 +115,7 @@ Train GAN
 Generate synthetic face images
 
 Training generates sample outputs each epoch and stores checkpoints.
-📦 Model Saving
+ Model Saving
 
 The notebook saves:
 
