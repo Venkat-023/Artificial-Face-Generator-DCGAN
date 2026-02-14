@@ -1,4 +1,4 @@
-#  CelebFaces GAN — Generating Realistic Celebrity Faces with TensorFlow
+#  CelebFaces GAN — Generating Realistic Celebrity Faces
 
 This repository contains an end-to-end implementation of a **Generative Adversarial Network (GAN)** trained on the *CelebA human face dataset*.  
 The project demonstrates how to build, train, and monitor a GAN capable of generating realistic synthetic face images.
